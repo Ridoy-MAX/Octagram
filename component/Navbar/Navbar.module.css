@@ -1,0 +1,279 @@
+/*==========
+variable css start
+==============*/
+
+/*==========
+  variable css end
+  ==============*/
+/*==========================
+  responsive NAV bar 
+  ==================
+  ========================*/
+
+
+.header {
+  /* background-color: rgba(0, 0, 0, 0.067); */
+  padding-top: 26px;
+  left: 0;
+  width: 100%;
+  height: var(--header-height);
+  padding: 0 1rem;
+
+  display: flex;
+  align-items: center;
+
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0);
+
+}
+.header .buttion_primary p{
+  position: relative;
+  top:7px;
+  color: rgb(255, 255, 255);
+  font-size: 14px;
+}
+.header .buttion_primary{
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+  width: 150px;
+  height: 50px;
+  border-radius: 40px;
+  background: linear-gradient(550deg,#102b51,#f9bf01);
+  background-clip: border-box;
+/* -webkit-background-clip: text; */
+/* -webkit-text-fill-color: transparent; */
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+  margin-left: 0px !important;
+  font-family: var(--family1);
+
+  font-weight: 600;
+  padding-right: 0px !important;
+  text-transform: uppercase;
+  top: 10px !important;
+  margin-left: 50px !important;
+
+}
+
+/*responsive*/
+@media screen and (min-width: 1024px) {
+  .bd-grid {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.menu_item_has_children {
+  position: relative;
+
+  padding-right: 0px;
+}
+
+.menu_item_has_children:hover .sub_menu {
+  display: block;
+  opacity: 1;
+
+}
+
+
+.header .header__logo {
+  position: relative;
+}
+
+
+.header .nav {
+  width: 100%;
+}
+
+.header .nav .menu {
+  padding-top: 20px;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.header .nav .menu .logo a {
+  line-height: 50px;
+  margin-right: 300px;
+}
+
+.header .nav .menu .nav_item .list {
+  display: flex;
+  margin-top: 0px;
+}
+
+
+
+.header .nav .menu .nav_item ul li a {
+  text-decoration: none;
+  font-family: var(--family1);
+  color: var(--font_color1);
+  font-size: 20px;
+  padding-right: 7px;
+
+  position: relative;
+  top: 24px;
+  margin-right: 30px;
+
+
+  position: relative;
+}
+
+.header .nav .menu .nav_item ul li a:hover {
+  color: var(--brand_color);
+}
+
+
+
+
+
+
+
+
+.logo-text {
+  margin-left: 30px;
+}
+
+
+
+
+
+
+
+
+.header .nav_item .list i {
+  display: show !important;
+}
+
+.header .menu .close {
+  color: white;
+  display: none !important;
+
+}
+
+.header .menuToggle {
+  opacity: 0;
+  display: none;
+}
+
+.header .menuser {
+  opacity: 0;
+
+}
+
+@media screen and (max-width: 768px) {
+
+  .show {
+    left: 0% !important;
+    top: 0;
+
+  } 
+
+   
+  .nav {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    background-color: #00BE68;
+    width: 100%;
+    height: 100vh !important;
+    padding: 0;
+    z-index: var(--z-fixed);
+    transition: .5s;
+    overflow-y: auto;
+    color: white;
+    z-index: 9;
+  }
+  .header .header__toggle {
+    font-size: 30px;
+    cursor: pointer;
+    padding-right: 20px;
+    position: absolute;
+    right: 0;
+  }
+  .header .menu .close {
+    color: white;
+    display: block !important;
+
+    float: right;
+    display: flex;
+    justify-content: end;
+    text-decoration: none;
+    font-size: 30px;
+    padding: 20px;
+    padding-top: 0px !important;
+
+
+  }
+
+  .header .menu .close i {
+    margin-left: 5px;
+  }
+
+  .header .menuser {
+    opacity: 1;
+    display: block;
+  }
+
+  .header .menuToggle {
+    opacity: 1;
+    display: block;
+  }
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+  }
+
+  .header i {
+    color: rgb(0, 0, 0);
+  }
+
+  .header .header__logo .logo img {
+    width: 100px;
+  }
+
+
+  .header .nav .menu .nav_item .list {
+    display: flex;
+    flex-direction: column;
+    margin-top: -9px;
+  }
+
+  .header .nav .menu .list .num {
+    display: none;
+  }
+ 
+  .header {
+    height: calc(var(--header-height) + 1rem);
+  }
+  .header__logo,
+  .header__toggle {
+    display: none;
+  }
+  .header__toggle {
+    padding-right: 10px;
+  }
+  .header .nav .menu {
+    flex-direction: column;
+  }
+  .header .nav .menu .logo {
+    display: none;
+  }
+}
