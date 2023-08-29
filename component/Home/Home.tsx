@@ -1,5 +1,7 @@
 import React from 'react'
 import Navbar from '../Navbar/Navbar'
+import Footer from '../Footer/Footer'
+import Five from '../Home/Five/Five'
 import Three from '../Home/Three/Three'
 import Two from '../Home/two/two'
 import One from '../Home/One/One'
@@ -36,6 +38,7 @@ const Home = () => {
                         <One />
                         <Two />
                         <Three />
+                     
 
 
                    
@@ -46,7 +49,8 @@ const Home = () => {
 
             </div>
 
-
+            <Five />
+            <Footer />
 
         </div>
     )

@@ -28,9 +28,11 @@ variable css start
 }
 .header .buttion_primary p{
   position: relative;
-  top:7px;
+  top: 7px;
   color: rgb(255, 255, 255);
-  font-size: 14px;
+  font-size: 12px;
+  letter-spacing: 0.3em !important;
+  font-weight: 400;
 }
 
 
