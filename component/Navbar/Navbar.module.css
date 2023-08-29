@@ -32,30 +32,8 @@ variable css start
   color: rgb(255, 255, 255);
   font-size: 14px;
 }
-.header .buttion_primary{
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 
-  width: 150px;
-  height: 50px;
-  border-radius: 40px;
-  background: linear-gradient(550deg,#102b51,#f9bf01);
-  background-clip: border-box;
-/* -webkit-background-clip: text; */
-/* -webkit-text-fill-color: transparent; */
-  display: flex;
 
-  justify-content: center;
-  align-items: center;
-  margin-left: 0px !important;
-  font-family: var(--family1);
-
-  font-weight: 600;
-  padding-right: 0px !important;
-  text-transform: uppercase;
-  top: 10px !important;
-  margin-left: 50px !important;
-
-}
 
 /*responsive*/
 @media screen and (min-width: 1024px) {
@@ -118,7 +96,9 @@ variable css start
 }
 
 
-
+.header .nav .menu .nav_item ul li a p{
+  margin-right: 25px;
+}
 .header .nav .menu .nav_item ul li a {
   text-decoration: none;
   font-family: var(--family1);
@@ -134,16 +114,69 @@ variable css start
   position: relative;
 }
 
-.header .nav .menu .nav_item ul li a:hover {
+.header .nav .menu .nav_item ul li a::before{
+  position: relative;
+  top: 33px;
+  content: '';
+  width: 0%!important;
+  height: 4px !important;
+  background-color: var(--brand_color);
+}
+/* .header .nav .menu .nav_item ul li a:hover {
   color: var(--brand_color);
+} */
+
+
+
+
+
+.header .nav .menu .nav_item ul li a:hover::before{
+  width: 78%!important;
+  transition: 0.4s;
 }
 
 
+.buttion_primary_none{
+
+
+  display: flex;
+  flex-direction: column;
 
 
 
 
+}
 
+.header .nav .menu .nav_item ul li .buttion_primary:hover::before{
+  width: 0% !important;
+}
+.header .buttion_primary p{
+  margin-right: 0px !important;
+}
+.header .buttion_primary{
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+  width: 150px;
+  height: 50px;
+  border-radius: 40px;
+  background: linear-gradient(550deg,#102b51,#f9bf01);
+  background-clip: border-box;
+/* -webkit-background-clip: text; */
+/* -webkit-text-fill-color: transparent; */
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+  margin-left: 0px !important;
+  font-family: var(--family1);
+
+  font-weight: 600;
+  padding-right: 0px !important;
+  text-transform: uppercase;
+  top: 10px !important;
+  margin-left: 50px !important;
+
+}
 
 .logo-text {
   margin-left: 30px;

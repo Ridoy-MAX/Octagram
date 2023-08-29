@@ -84,33 +84,25 @@ const Navbar = () => {
                         <ul className={styles.list}>
 
                           <li className={styles.menu_item_has_children}>
-                            <Link href=""> Home</Link>
-                            {/* <i className="fa-solid fa-sort-down"></i> */}
-                            {/* 
-                            <ul className={styles.sub_menu}>
-                              <li className={styles.menu_item}>
-                                <Link href="/Create_token">Service
-                              </Link>
-                              </li>
+                            <Link href="" className={styles.buttion_primary_none}> <p>Home</p></Link>
                           
-                            </ul> */}
                           </li>
 
                           <li>
-                            <Link href="/Multi_sender">
-                              Service
+                            <Link href="/Multi_sender" className={styles.buttion_primary_none}>
+                             <p> Service</p>
                             </Link>
                           </li>
                           <li>
-                            <Link href="/Multi_sender">
-                              About
+                            <Link href="/Multi_sender" className={styles.buttion_primary_none}>
+                           <p>   About</p>
                             </Link>
                           </li>
 
 
                           <li>
-                            <Link href="/Leader_board">
-                              Contact
+                            <Link href="" className={styles.buttion_primary_none}>
+                            <p>  Contact</p>
                             </Link>
                           </li>
                           {/* <li>

@@ -31,13 +31,16 @@ const Home = () => {
                         </div>
                     </div>
                     <div className="col-md-9">
-                      
+
 
                         <One />
                         <Two />
                         <Three />
 
+
                    
+
+
                     </div>
                 </div>
 

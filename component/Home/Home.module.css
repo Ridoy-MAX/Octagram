@@ -358,3 +358,67 @@ text-align: center;
 padding-top: 50px;
   margin-bottom: 0px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@keyframes rotate-outer{
+	0%{
+		transform: rotate(45deg);
+	}
+	100%{
+		transform: rotate(135deg);
+	}
+}
+
+@keyframes rotate-inner{
+	0%{
+		transform: rotate(0deg);
+	}
+	100%{
+		transform: rotate(-90deg);
+	}
+}
+
+@keyframes slide-left{
+	0%{
+		transform: rotate(45deg);
+	}
+	100%{
+		transform: translate(-30px) rotate(45deg);
+	}
+}
+
+@keyframes slide-right{
+	0%{
+		transform: rotate(225deg);
+	}
+	100%{
+		transform: translate(30px) rotate(225deg);
+	}
+}
