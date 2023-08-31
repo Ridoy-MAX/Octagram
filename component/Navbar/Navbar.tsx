@@ -1,5 +1,5 @@
 import Link from "next/link";
-
+import { motion } from 'framer-motion';
 import styles from "./Navbar.module.css";
 import Image from 'next/image'
 import logo from '../../public/logo.png'
@@ -85,24 +85,24 @@ const Navbar = () => {
 
                           <li className={styles.menu_item_has_children}>
                             <Link href="" className={styles.buttion_primary_none}> <p>Home</p></Link>
-                          
+
                           </li>
 
                           <li>
                             <Link href="/Multi_sender" className={styles.buttion_primary_none}>
-                             <p> Service</p>
+                              <p> Service</p>
                             </Link>
                           </li>
                           <li>
                             <Link href="/Multi_sender" className={styles.buttion_primary_none}>
-                           <p>   About</p>
+                              <p>   About</p>
                             </Link>
                           </li>
 
 
                           <li>
                             <Link href="" className={styles.buttion_primary_none}>
-                            <p>  Contact</p>
+                              <p>  Contact</p>
                             </Link>
                           </li>
                           {/* <li>
@@ -113,12 +113,30 @@ const Navbar = () => {
                           </li> */}
                           <li>
 
-                            <Link href="" className={styles.buttion_primary} >
+                            <motion.div
+                              initial={{ opacity: 0, scale: 0.5 }}
+                              animate={{ opacity: 1, scale: 1 }}
+                              whileHover={{ scale: 1.1 }}
+                              whileTap={{ scale: 1 }}
+                              transition={{ type: "spring", stiffness: 400, damping: 17 }}
 
-                              <p>      
-                             Contact us</p>
-                          
-                            </Link>
+                            >
+                              <Link
+
+                                href="#" className={styles.buttion_primary} >
+
+                                <p>
+                                  Contact us</p>
+
+                              </Link>
+
+                            </motion.div>
+
+
+
+
+
+
                           </li>
                         </ul>
                       </div>
@@ -132,7 +150,7 @@ const Navbar = () => {
           </nav>
         </header>
       </div>
-    </div>
+    </div >
   )
 }
 
