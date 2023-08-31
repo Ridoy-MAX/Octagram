@@ -4,6 +4,8 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import styles from '../Home.module.css';
 
+// import "../../../styles/slick-slider-custom.css";
+
 const Slider_red = () => {
     const Slider_red = {
         dots: false,
@@ -11,8 +13,8 @@ const Slider_red = () => {
         infinite: true,
         vertical: true,  // Set the slider to vertical mode
         verticalSwiping: true,  // Enable vertical swiping
-        slidesToShow: 3,
-        // centerMode: true,
+        slidesToShow: 1,
+        centerMode: true,
         slidesToScroll: 1,
         autoplay: true,
         autoplaySpeed: 2000,
@@ -22,7 +24,7 @@ const Slider_red = () => {
     <div>
           <div className={styles.slider_red_one}>
         <div className="col-12">
-          <Slider {...Slider_red} className="main-slider">
+          <Slider {...Slider_red} className="red-slider">
 
             <div className={styles.item}>
                 <h1>Ridoy Khan</h1>

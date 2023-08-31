@@ -14,18 +14,18 @@ const Four = () => {
         <div>
             <div className={styles.home_section_four}> {/* Use styles.home_section_four */}
                 <div className={styles.tab}>
-                <button
-            className={`${activeTab === 'cyber' ? styles.activeButton : ''}`}
-            onClick={() => handleTabClick('cyber')}
-          >
-            Cyber team
-          </button>
-          <button
-            className={`${activeTab === 'red' ? styles.activeButton : ''}`}
-            onClick={() => handleTabClick('red')}
-          >
-            Red team
-          </button>
+                    <button
+                        className={`${activeTab === 'cyber' ? styles.activeButton : ''}`}
+                        onClick={() => handleTabClick('cyber')}
+                    >
+                        Cyber team
+                    </button>
+                    <button
+                        className={`${activeTab === 'red' ? styles.activeButton : ''}`}
+                        onClick={() => handleTabClick('red')}
+                    >
+                        Red team
+                    </button>
                 </div>
 
                 <div className='tab-content'>
@@ -71,7 +71,7 @@ const Four = () => {
                                                 </div>
 
 
-                                            
+
                                             </div>
                                         </div>
 
@@ -120,11 +120,11 @@ const Four = () => {
                                                 </div>
                                             </div>
                                             <div className="col-md-6">
-                                            <div className={styles.slider}>
+                                                <div className={styles.slider}>
                                                     <div className={styles.top}></div>
-                                                       <div className={styles.slider_body}>
-                                                       <SliderRed />
-                                                       </div>
+                                                    <div className={styles.slider_body}>
+                                                        <SliderRed />
+                                                    </div>
                                                     <div className={styles.down}></div>
                                                 </div>
                                             </div>

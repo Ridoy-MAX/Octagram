@@ -1,7 +1,7 @@
 import React from 'react'
 import Link from "next/link";
 import Image from 'next/image'
-import logo from '../../public/logo.png'
+import logo from '../../public/oc.png'
 import Style from '../Footer/Footer.module.css'
 const Footer = () => {
     return (
@@ -16,7 +16,7 @@ const Footer = () => {
                                     <Image
                                         src={logo}
                                         alt="Picture of the author"
-                                        width={70}
+                                        width={250}
 
                                     />
 
