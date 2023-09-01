@@ -6,15 +6,9 @@ import logo from '../../public/logo.png'
 import { useState, useEffect } from 'react';
 
 const Navbar = () => {
-
-
   const [menuOpen, setMenuOpen] = useState(false);
-
-  const handleMenuToggle = () => {
-    setMenuOpen(!menuOpen);
-  };
-
   const [darkMode, setDarkMode] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
     if (darkMode) {
@@ -22,13 +16,36 @@ const Navbar = () => {
     } else {
       document.body.classList.remove('dark-mode');
     }
+
+    // Event listener for scroll
+    const handleScroll = () => {
+      if (window.scrollY > 0) {
+        // User has scrolled, add the scrolled class
+        setScrolled(true);
+      } else {
+        // User is at the top, remove the scrolled class
+        setScrolled(false);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    // Cleanup the event listener when the component unmounts
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
   }, [darkMode]);
+
+
+  function handleMenuToggle(event: MouseEvent<HTMLElement, MouseEvent>): void {
+    throw new Error("Function not implemented.");
+  }
 
   return (
     <div>
 
       <div >
-        <header className={styles.header}>
+        <header className={`${styles.header} ${scrolled ? styles.scrolledNavbar : ''}`}>
           <i
             className={`fa-solid fa-bars ${styles.menuToggle}`}
             onClick={handleMenuToggle}
@@ -73,7 +90,7 @@ const Navbar = () => {
                           <Image
                             src={logo}
                             alt="Picture of the author"
-                            width={70}
+                            width={60}
 
                           />
 
@@ -92,6 +109,121 @@ const Navbar = () => {
                             <Link href="/Multi_sender" className={styles.buttion_primary_none}>
                               <p> Service</p>
                             </Link>
+
+                            <div className={styles.sub_menu_list}>
+                              <div className="container">
+                                <div className="row">
+                                  <h6> Our Services</h6>
+
+                                  <div className={styles.services}>
+                                    <div className="row">
+                                      <div className="col">
+                                        <div className="row">
+                                          <div className="col-md-4">
+                                          <Link href="" className={styles.service_link}>
+                                              <div className={styles.one}>
+                                                <div className={styles.img}>
+                                                  <img src="three.svg" alt="" />
+                                                </div>
+                                                <div className={styles.text}>
+                                                  <h4>  Cyber Security & VAPT</h4>
+                                                  <p>Our team can secure your IT infrastructure with professional testing and assessments.</p>
+                                                </div>
+                                              </div>
+
+                                            </Link>
+                                          </div>
+                                          <div className="col-md-4">
+                                          <Link href="" className={styles.service_link}>
+                                              <div className={styles.one}>
+                                                <div className={styles.img}>
+                                                  <img src="one.svg" alt="" />
+                                                </div>
+                                                <div className={styles.text}>
+                                                  <h4> Web Design & Dev</h4>
+                                                  <p>Our programmers are ready to develop your web site or application with expertise and attention.</p>
+                                                </div>
+                                              </div>
+
+                                            </Link>
+                                          </div>
+                                          <div className="col-md-4">
+                                          <Link href="" className={styles.service_link}>
+                                              <div className={styles.one}>
+                                                <div className={styles.img}>
+                                                  <img src="one.svg" alt="" />
+                                                </div>
+                                                <div className={styles.text}>
+                                                  <h4>Graphics Design</h4>
+                                                  <p>From eye catching social media posts to Logo design, we got you covered..</p>
+                                                </div>
+                                              </div>
+
+                                            </Link>
+                                          </div>
+                                          <div className="col-md-4">
+                                          <Link href="" className={styles.service_link}>
+                                              <div className={styles.one}>
+                                                <div className={styles.img}>
+                                                  <img src="one.svg" alt="" />
+                                                </div>
+                                                <div className={styles.text}>
+                                                  <h4>  Mobile App Development</h4>
+                                                  <p>We are always ready to develop your desired mobile application.</p>
+                                                </div>
+                                              </div>
+
+                                            </Link>
+                                          </div>
+                                          <div className="col-md-4">
+                                            
+                                          <Link href="" className={styles.service_link}>
+                                              <div className={styles.one}>
+                                                <div className={styles.img}>
+                                                  <img src="one.svg" alt="" />
+                                                </div>
+                                                <div className={styles.text}>
+                                                  <h4>Hardware Import</h4>
+                                                  <p>We import high quality and in-budget IT devices from multiple trusted vendors.</p>
+                                                </div>
+                                              </div>
+
+                                            </Link>
+                                          </div>
+                                          <div className="col-md-4">
+                                            
+                                          <Link href="" className={styles.service_link}>
+                                              <div className={styles.one}>
+                                                <div className={styles.img}>
+                                                  <img src="one.svg" alt="" />
+                                                </div>
+                                                <div className={styles.text}>
+                                                  <h4>Hardware Import</h4>
+                                                  <p>We import high quality and in-budget IT devices from multiple trusted vendors.</p>
+                                                </div>
+                                              </div>
+
+                                            </Link>
+                                          </div>
+                                     
+
+
+                                        </div>
+                                      </div>
+                                    </div>
+
+
+                                  </div>
+                                </div>
+                              </div>
+
+
+
+
+
+                            </div>
+
+
                           </li>
                           <li>
                             <Link href="/why_octagram" className={styles.buttion_primary_none}>
@@ -116,33 +248,25 @@ const Navbar = () => {
 
                             </Link>
                           </li> */}
-                          <li>
+                          <motion.div
+                            // initial={{ opacity: 0, scale: 0.5 }}
+                            // animate={{ opacity: 1, scale: 1 }}
+                            whileHover={{ scale: 1.1 }}
+                            whileTap={{ scale: 1 }}
+                            transition={{ type: "spring", stiffness: 400, damping: 17 }}
+                          >
+                            <li>
 
-                            <motion.div
-                              // initial={{ opacity: 0, scale: 0.5 }}
-                              // animate={{ opacity: 1, scale: 1 }}
-                              whileHover={{ scale: 1.1 }}
-                              whileTap={{ scale: 1 }}
-                              transition={{ type: "spring", stiffness: 400, damping: 17 }}
-
-                            >
                               <Link
-
                                 href="/contact" className={styles.buttion_primary} >
-
                                 <p>
                                   Contact us</p>
 
                               </Link>
 
-                            </motion.div>
+                            </li>
 
-
-
-
-
-
-                          </li>
+                          </motion.div>
                         </ul>
                       </div>
                     </div>
