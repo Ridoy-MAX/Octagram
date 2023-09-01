@@ -84,7 +84,7 @@ const Navbar = () => {
                         <ul className={styles.list}>
 
                           <li className={styles.menu_item_has_children}>
-                            <Link href="" className={styles.buttion_primary_none}> <p>Home</p></Link>
+                            <Link href="/" className={styles.buttion_primary_none}> <p>Home</p></Link>
 
                           </li>
 
@@ -94,17 +94,22 @@ const Navbar = () => {
                             </Link>
                           </li>
                           <li>
-                            <Link href="/Multi_sender" className={styles.buttion_primary_none}>
+                            <Link href="/why_octagram" className={styles.buttion_primary_none}>
+                              <p> Why Octagram</p>
+                            </Link>
+                          </li>
+                          <li>
+                            <Link href="/about" className={styles.buttion_primary_none}>
                               <p>   About</p>
                             </Link>
                           </li>
 
 
-                          <li>
+                          {/* <li>
                             <Link href="" className={styles.buttion_primary_none}>
                               <p>  Contact</p>
                             </Link>
-                          </li>
+                          </li> */}
                           {/* <li>
                             <Link href="" className={styles.them} onClick={() => setDarkMode(!darkMode)}>
                               <i className="fa-regular fa-sun"></i>
@@ -114,8 +119,8 @@ const Navbar = () => {
                           <li>
 
                             <motion.div
-                              initial={{ opacity: 0, scale: 0.5 }}
-                              animate={{ opacity: 1, scale: 1 }}
+                              // initial={{ opacity: 0, scale: 0.5 }}
+                              // animate={{ opacity: 1, scale: 1 }}
                               whileHover={{ scale: 1.1 }}
                               whileTap={{ scale: 1 }}
                               transition={{ type: "spring", stiffness: 400, damping: 17 }}
@@ -123,7 +128,7 @@ const Navbar = () => {
                             >
                               <Link
 
-                                href="#" className={styles.buttion_primary} >
+                                href="/contact" className={styles.buttion_primary} >
 
                                 <p>
                                   Contact us</p>

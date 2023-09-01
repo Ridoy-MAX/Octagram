@@ -164,8 +164,8 @@ padding-right: 300px;
 cursor: pointer;
   margin-top: 40px;
   border-radius: 25px;
-
-  background-color: #e3e2e2ab;
+  box-shadow: 5px 4px 21px rgba(0,0,0,.07), -6px -6px 9px -1px #fff;
+  /* background-color: #e3e2e2ab; */
   padding: 30px;
 }
 
