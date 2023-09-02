@@ -2,7 +2,8 @@ import Link from "next/link";
 import { motion } from 'framer-motion';
 import styles from "./Navbar.module.css";
 import Image from 'next/image'
-import logo from '../../public/logo.png'
+import logo from '../../public/oc2.png'
+import logo2 from '../../public/black.png'
 import { useState, useEffect } from 'react';
 
 const Navbar = () => {
@@ -85,12 +86,20 @@ const Navbar = () => {
 
 
                       <div className="d-flex justify-content-center">
-                        <Link href="/">
+                        <Link href="/" className="d-flex align-items-center" >
 
                           <Image
                             src={logo}
                             alt="Picture of the author"
-                            width={60}
+                            width={50}
+
+                          />
+
+                          <Image 
+                          className="ms-2"
+                            src={logo2}
+                            alt="Picture of the author"
+                            width={120} 
 
                           />
 
@@ -106,7 +115,7 @@ const Navbar = () => {
                           </li>
 
                           <li>
-                            <Link href="/Multi_sender" className={styles.buttion_primary_none}>
+                            <Link href="#" className={styles.buttion_primary_none}>
                               <p> Service</p>
                             </Link>
 
@@ -120,7 +129,7 @@ const Navbar = () => {
                                       <div className="col">
                                         <div className="row">
                                           <div className="col-md-4">
-                                          <Link href="" className={styles.service_link}>
+                                          <Link href="/cyber" className={styles.service_link}>
                                               <div className={styles.one}>
                                                 <div className={styles.img}>
                                                   <img src="three.svg" alt="" />
@@ -134,7 +143,7 @@ const Navbar = () => {
                                             </Link>
                                           </div>
                                           <div className="col-md-4">
-                                          <Link href="" className={styles.service_link}>
+                                          <Link href="/web" className={styles.service_link}>
                                               <div className={styles.one}>
                                                 <div className={styles.img}>
                                                   <img src="one.svg" alt="" />
@@ -148,7 +157,7 @@ const Navbar = () => {
                                             </Link>
                                           </div>
                                           <div className="col-md-4">
-                                          <Link href="" className={styles.service_link}>
+                                          <Link href="/cyber" className={styles.service_link}>
                                               <div className={styles.one}>
                                                 <div className={styles.img}>
                                                   <img src="one.svg" alt="" />
@@ -162,7 +171,7 @@ const Navbar = () => {
                                             </Link>
                                           </div>
                                           <div className="col-md-4">
-                                          <Link href="" className={styles.service_link}>
+                                          <Link href="/web" className={styles.service_link}>
                                               <div className={styles.one}>
                                                 <div className={styles.img}>
                                                   <img src="one.svg" alt="" />
@@ -176,8 +185,7 @@ const Navbar = () => {
                                             </Link>
                                           </div>
                                           <div className="col-md-4">
-                                            
-                                          <Link href="" className={styles.service_link}>
+                                          <Link href="/cyber" className={styles.service_link}>
                                               <div className={styles.one}>
                                                 <div className={styles.img}>
                                                   <img src="one.svg" alt="" />
@@ -192,7 +200,7 @@ const Navbar = () => {
                                           </div>
                                           <div className="col-md-4">
                                             
-                                          <Link href="" className={styles.service_link}>
+                                          <Link href="/web" className={styles.service_link}>
                                               <div className={styles.one}>
                                                 <div className={styles.img}>
                                                   <img src="one.svg" alt="" />

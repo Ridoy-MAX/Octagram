@@ -1,7 +1,8 @@
 import React from 'react'
 import Link from "next/link";
 import Image from 'next/image'
-import logo from '../../public/oc.png'
+import logo from '../../public/c1.png'
+import logo1 from '../../public/oc2.png'
 import Style from '../Footer/Footer.module.css'
 const Footer = () => {
     return (
@@ -11,12 +12,21 @@ const Footer = () => {
                     <div className={Style.footer_head}>
                         <div className="row">
                             <div className="col-md-2 d-flex justify-content-center">
-                                <Link href="/">
+                                <Link href="/" className='d-flex ms-5 align-items-cente'>
 
+
+                                    <Image
+                                        src={logo1}
+                                        alt="Picture of the author"
+                                        width={60}
+                                        className=''
+
+                                    />
                                     <Image
                                         src={logo}
                                         alt="Picture of the author"
-                                        width={250}
+                                        width={150}
+                                        className='mt-3 ms-2'
 
                                     />
 
@@ -116,35 +126,42 @@ const Footer = () => {
                                             </div>
                                         </div>
                                     </div>
-                                    <div className="col-md-6">
-                                        <div className={Style.from}>
-                                            <h1>Contact us</h1>
-                                            <div className={Style.from_control}>
-                                                <p>Full Name</p>
-                                                <div className={Style.input}>
-                                                    <input type="text" id="exampleFormControlInput1" />
-                                                </div>
+                                    <div className="col-md-6 d-flex justify-content-around">
+                                        <div className={Style.one}>
+                                            <h2 className='mb-4'>
+                                                Get in touch</h2>
 
-                                            </div>
-                                            <div className={Style.from_control}>
-                                                <p>Email address</p>
-                                                <div className={Style.input}>
-                                                    <input type="text" id="exampleFormControlInput1" />
-                                                </div>
+                                            <div className={Style.link}>
+                                                <a >
+                                                    <i className="fa-solid fa-phone-volume"></i>
+                                                    <p>01549264941</p>
+                                                </a>
+                                                <a >
+                                                    <i className="fa-regular fa-clock"></i>
+                                                    <p>10 am to 8 pm</p>
+                                                </a>
+                                                <a >
+                                                    <i className="fa-regular fa-address-card"></i>
+                                                    <p>House No. 4 (Amin Tower), Level: 6, Road: 1/A, Sector: 9, North Side of Mascot Plaza, Uttara, Dhaka – 1230</p>
+                                                </a>
 
-                                            </div>
-                                            <div className={Style.from_control}>
-                                                <p>Message</p>
-                                                <div className={Style.input}>
-                                                    <textarea id="exampleFormControlTextarea1" rows={3}></textarea>
-                                                </div>
 
                                             </div>
 
 
-                                            <Link href="#" className={Style.send}>
-                                                <h6 className='mb-0'>SEND</h6>
-                                            </Link>
+                                        </div>
+                                        <div className={Style.one}>
+                                            <h2 className='mb-4 me-5'>
+                                            What to Expect</h2>
+
+                                            <div className={Style.link}>
+                                                <Link href="/contact" className={Style.buttton}>
+                                                Contact us
+                                                </Link>
+                                            
+
+                                            </div>
+
 
                                         </div>
                                     </div>
@@ -156,15 +173,19 @@ const Footer = () => {
 
                     <div className={Style.footer_end}>
                         <div className="row">
-                            <div className="col-md-11 d-flex justify-content-between">
+                            <div className="col-md-10 d-flex justify-content-center">
                                 <div>
                                     <h6 className='ms-5'>Copyright © 2023 Octagram Limited</h6>
                                 </div>
-                                <div className='d-flex'>
-                                    <h6>Privacy</h6>
-                                    <h6>Trem</h6>
-                                </div>
 
+
+                            </div>
+
+                            <div className="col-md-1">
+                                <div className='d-flex'>
+                                    {/* <h6>Privacy</h6>
+                                    <h6>Trem</h6> */}
+                                </div>
                             </div>
 
                         </div>

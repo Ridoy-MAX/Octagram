@@ -119,24 +119,59 @@
 .footer_body .one h2{
     font-size: 18px;
     font-weight: 400;
-    letter-spacing: .3em;
+    letter-spacing: .1em;
     color: var(--brand_color);
     font-family: var(--family1);
 }
 .footer_body .content .one {
-    margin-top: 100px;
+    margin-top: 5px;
 }
+ 
 .footer_body .content .one .link{
     display: flex;
     flex-direction: column;
 }
+.footer_body  .one .link a{
+    display: flex;
+}
+.footer_body  .one .link a i{
+    color: white;
+}
+.footer_body  .one .link a p{
+    display: flex;
+    text-decoration: none;
+    color: white;
+    font-family: var(--family1);
+    padding-top: 0px;
+    font-size: 14px;
+    margin-left: 8px; 
+   
+    width: 244px;
 
+}
+
+.footer_body  .one .link .buttton{
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 13px 15px;
+    border-radius: 20px;
+    background-color: var(--brand_color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(0, 0, 0);
+    font-family: var(--family1);
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 0.3em !important;
+}
 .footer_body .content .one .link a{
+    display: flex;
     text-decoration: none;
     color: white;
     font-family: var(--family1);
     padding-top: 15px;
-    font-size: 16px;
+    font-size: 14px;
 }
 .footer_end{
     padding-top: 30px;
