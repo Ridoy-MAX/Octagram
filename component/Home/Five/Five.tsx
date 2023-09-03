@@ -24,8 +24,11 @@ const Five = () => {
 
                             </h2>
                             <h2> started?</h2>
-
+                            <div className={Style.contact_button}>
                             <a className="buttion"><h6 className='mb-0'>Contact US</h6></a>
+                            </div>
+
+                      
 
                         </div>
 

@@ -31,7 +31,7 @@ const Slider_two = () => {
                 arrows: false,
                 centerMode: true,
                 centerPadding: '40px',
-                slidesToShow: 2
+                slidesToShow: 3,
               }
             }
           ]

@@ -14,11 +14,26 @@ const Slider_red = () => {
         vertical: true,  // Set the slider to vertical mode
         verticalSwiping: true,  // Enable vertical swiping
         slidesToShow: 1,
-        centerMode: true,
+        // centerMode: true,
         slidesToScroll: 1,
         autoplay: true,
         autoplaySpeed: 2000,
-    
+        responsive: [
+          {
+            breakpoint: 1024,
+            settings: {
+              slidesToShow: 2, // Number of slides to show at once on medium-sized screens
+            },
+          },
+          {
+            breakpoint: 768,
+            settings: {
+              vertical: false, 
+              centerMode: false,
+              slidesToShow: 1, // screens
+            },
+          },
+        ],
       };
   return (
     <div>

@@ -12,7 +12,7 @@ const Footer = () => {
                     <div className={Style.footer_head}>
                         <div className="row">
                             <div className="col-md-2 d-flex justify-content-center">
-                                <Link href="/" className='d-flex ms-5 align-items-cente'>
+                                <Link href="/" className={Style.footer_logo}>
 
 
                                     <Image
@@ -127,43 +127,41 @@ const Footer = () => {
                                         </div>
                                     </div>
                                     <div className="col-md-6 d-flex justify-content-around">
-                                        <div className={Style.one}>
-                                            <h2 className='mb-4'>
-                                                Get in touch</h2>
+                                        <div className={Style.footer_contact}>
+                                            <div className={Style.one}>
+                                                <h2 className='mb-4'>
+                                                    Get in touch</h2>
 
-                                            <div className={Style.link}>
-                                                <a >
-                                                    <i className="fa-solid fa-phone-volume"></i>
-                                                    <p>01549264941</p>
-                                                </a>
-                                                <a >
-                                                    <i className="fa-regular fa-clock"></i>
-                                                    <p>10 am to 8 pm</p>
-                                                </a>
-                                                <a >
-                                                    <i className="fa-regular fa-address-card"></i>
-                                                    <p>House No. 4 (Amin Tower), Level: 6, Road: 1/A, Sector: 9, North Side of Mascot Plaza, Uttara, Dhaka – 1230</p>
-                                                </a>
-
-
+                                                <div className={Style.link}>
+                                                    <a >
+                                                        <i className="fa-solid fa-phone-volume"></i>
+                                                        <p>01549264941</p>
+                                                    </a>
+                                                    <a >
+                                                        <i className="fa-regular fa-clock"></i>
+                                                        <p>10 am to 8 pm</p>
+                                                    </a>
+                                                    <a >
+                                                        <i className="fa-regular fa-address-card"></i>
+                                                        <p>House No. 4 (Amin Tower), Level: 6, Road: 1/A, Sector: 9, North Side of Mascot Plaza, Uttara, Dhaka – 1230</p>
+                                                    </a>
+                                                </div>
                                             </div>
-
-
                                         </div>
-                                        <div className={Style.one}>
-                                            <h2 className='mb-4 me-5'>
-                                            What to Expect</h2>
 
-                                            <div className={Style.link}>
-                                                <Link href="/contact" className={Style.buttton}>
-                                                Contact us
-                                                </Link>
-                                            
+                                        <div className={Style.footer_contact2}>
+                                            <div className={Style.one}>
+                                                <h2 className='mb-4 me-5'>
+                                                    What to Expect</h2>
 
+                                                <div className={Style.link}>
+                                                    <Link href="/contact" className={Style.buttton}>
+                                                        Contact us
+                                                    </Link>
+                                                </div>
                                             </div>
-
-
                                         </div>
+
                                     </div>
                                 </div>
 

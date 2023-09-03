@@ -47,19 +47,21 @@ const Navbar = () => {
 
       <div >
         <header className={`${styles.header} ${scrolled ? styles.scrolledNavbar : ''}`}>
+        {/* <i className={`fa-regular fa-user ${styles.menuser}`}></i> */}
+
+          <Link href="/" className={styles.mobile_logo}>
+            <div className={styles.logo}>
+              <img src="oc2.png" alt="" className={styles.one} />
+              <img src="black.png" alt=""  className={styles.two}/>
+            </div>
+          </Link>
+
+         
+
           <i
             className={`fa-solid fa-bars ${styles.menuToggle}`}
             onClick={handleMenuToggle}
           ></i>
-          <Link href="/" className={styles.header__logo}>
-            <div className={styles.logo}>
-              <img src="logo.svg" alt="" />
-            </div>
-          </Link>
-
-          <i className={`fa-regular fa-user ${styles.menuser}`}></i>
-
-
 
 
 

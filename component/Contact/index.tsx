@@ -61,7 +61,7 @@ const index = () => {
                                 </div>
                                 <div className="col-md-6">
                                     <div className={Style.contact_right}>
-                                        <img src="about.webp" alt="" />
+                                        <img src="about.webp" alt="" className='w-100' />
                                     </div>
                                 </div>
                             </div>

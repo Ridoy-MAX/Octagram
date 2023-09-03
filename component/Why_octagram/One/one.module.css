@@ -91,3 +91,83 @@ text-decoration: none;
 color: white;
 margin-top: 20px;
 }
+
+
+@media screen and (max-width: 575px) {
+    .why_section_one{
+        padding-top: 10px;
+        padding-bottom: 10px;
+        background-color: var(--brand_color);
+    }
+    .why_section_one .heading_one p{
+        font-weight: 500;
+        font-size: 4vw;
+        font-family: var(--family1);
+        color: white;
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .why_section_one .heading_two{
+        margin-top: 20px;
+    }
+    .why_section_one .heading_two h2{
+        font-family: var(--family1);
+        color: white;
+        font-size: 18px;
+        font-weight: 700;
+        letter-spacing: .224em;
+        text-transform: uppercase;
+        margin-bottom: 30px;
+        font-weight: 600;
+    }
+    .why_section_one .heading_two h3{
+        font-weight: 600;
+        font-size: 4vw;
+        font-family: var(--family1);
+        color: white;
+    }
+
+    .why_section_one .heading_two .card{
+        padding: 20px 20px;
+        border-radius: 20px;
+        background-color: white;
+        margin-top: 50px;
+    }
+    .why_section_one .heading_two .card .one h4{
+        letter-spacing: -.011em;
+        line-height: 1.2em;
+        font-size: 5.67vw;
+        color: #000;
+        font-family: var(--family1);
+        padding-right: 50px;
+        margin-left: 30px;
+    
+    }
+    .why_section_two .heading_one .card{
+        padding: 30px;
+    }
+    .why_section_two .heading_one .card h1{
+        font-family: var(--family1);
+        letter-spacing: -.011em;
+        line-height: 1.2em;
+        color: #016bff;
+        font-size: 6.5vw;
+    
+    }
+
+    .why_section_two .heading_one .card .one img{
+   
+        width: 60px;
+    }
+    .why_section_two .heading_one .card .one p{
+        margin-left: 20px;
+        font-family: var(--family1);
+        line-height: 1.5em;
+        color: #555;
+        font-size: 12px;
+        width: 200px;
+    }
+    
+}
+

@@ -32,3 +32,34 @@
     margin-top: 80px;
     margin-bottom: 80px;
 }
+
+@media screen and (max-width: 575px) {
+    .About_section_one .Heading_one h1{
+        background: linear-gradient(90deg,#102b51,#f9bf01);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        display: inline-block;
+        font-weight: 700;
+        font-family: var(--family1);
+        font-size: 9.81vw;
+        line-height: 1.15em;
+        margin-top: 10px;
+    }
+    .About_section_one .Heading_one h2{
+        font-family: var(--family1);
+        font-size: 6.67vw;
+        font-weight: 400;
+        margin-top: 18px;
+        margin-bottom: 18px;
+     
+    }
+ 
+.About_section_one .Heading_one p{
+    font-weight: 500;
+    font-family: var(--family1);
+    font-size: 13px;
+    color: #000000;
+    padding-right: 2px;
+}
+
+}

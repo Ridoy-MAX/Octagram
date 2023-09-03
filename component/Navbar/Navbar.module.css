@@ -15,10 +15,11 @@ variable css start
     top: 0;
     z-index: 9999999999999;
     backdrop-filter: blur(6px);
-    background-color: #c0c0c03d !important;
+    /* background-color: #c0c0c03d !important; */
+    /* background-color: #f7f2f2 !important; */
     border-bottom: 1px solid rgba(0, 0, 0, 0.082) !important;
     padding-bottom: 0px !important;
-    transition: 0.4s;
+    transition: 0.2s ease-out;
   }
 
   .scrolledNavbar .nav .menu {
@@ -40,8 +41,8 @@ variable css start
   align-items: center;
 
   padding-bottom: 30px;
-  border-bottom: 1px solid rgba(0, 0, 0, 0);
 
+  transition: 0.2s ease-out;
 }
 .header .buttion_primary p{
   position: relative;
@@ -275,9 +276,99 @@ z-index: 999999999999999;
   opacity: 0;
 
 }
-
+.mobile_logo{
+  display: none;
+}
 @media screen and (max-width: 768px) {
+  .header .nav {
+    width: 100%;
+    z-index: 9999999999999999999999999999999999999999;
+    overflow:-moz-hidden-unscrollable;
+  }
+  .header .buttion_primary p{
+    position: relative;
+    top: 7px;
+    color: rgb(41, 41, 41);
+    font-size: 16px;
+    letter-spacing: 0.3em !important;
+    font-weight: 600;
+  }
+  .header .buttion_primary{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  
+    width: 210px;
+    height: 65px;
+    border-radius: 40px;
+    background: var(--brand_color);
+    background-clip: border-box;
+  /* -webkit-background-clip: text; */
+  /* -webkit-text-fill-color: transparent; */
+    display: flex;
+  
+    justify-content: center;
+    align-items: center;
+    margin-left: 0px !important;
+    font-family: var(--family1);
+  
+    font-weight: 600;
+    padding-right: 0px !important;
+    text-transform: uppercase;
+    top: 10px !important;
+    margin-left: 0px !important;
+  
+  }
+  .header .nav .menu .nav_item ul li a {
+    text-decoration: none;
+    font-family: var(--family1);
+    color: #3b3b3b;
+    font-size: 30px;
+    padding-right: 7px;
+   font-weight: 600;
+    position: relative;
+    letter-spacing: 0.1em !important;
+    margin-right: 0px;
+  
+  
+    position: relative;
+  }
+  .header .nav .menu .nav_item .list li{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  .header .nav .menu .nav_item .list {
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px !important;
+    align-items: center;
+  }
+  .mobile_logo{
+    display: block;
+  }
+  .mobile_logo .logo {
+    display: flex;
+    align-items: center;
+  }
+  .mobile_logo .logo .one{
+    width: 30px;
+  }
+  .mobile_logo .logo .two{
+    width: 80px;
+    margin-left: 10px;
+  }
+  .scrolledNavbar {
 
+    position: fixed !important;
+    top: 0;
+    z-index: 9999999999999;
+    backdrop-filter: blur(6px);
+    /* background-color: #c0c0c03d !important; */
+    /* background-color: #f7f2f2 !important; */
+    border-bottom: 1px solid rgba(0, 0, 0, 0.082) !important;
+    padding-bottom: 0px !important;
+    transition: 0.2s ease-out;
+    padding-bottom: 17px !important;
+  }
   .show {
     left: 0% !important;
     top: 0;
@@ -289,7 +380,7 @@ z-index: 999999999999999;
     position: fixed;
     top: 0;
     left: -100%;
-    background-color: #00BE68;
+    background-color: var(--brand_color);
     width: 100%;
     height: 100vh !important;
     padding: 0;

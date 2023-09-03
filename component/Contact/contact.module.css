@@ -89,3 +89,25 @@
     font-weight: 400;
 
 }
+@media screen and (max-width: 575px) {
+
+    .contact .contact_left .from{
+        padding-right: 0px;
+    }
+    .contact .contact_left{
+        padding: 0px;
+    }
+
+    .contact .contact_left h1{
+
+        background: linear-gradient(90deg,#102b51,#f9bf01);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        display: inline-block;
+        font-weight: 700;
+        font-family: var(--family1);
+        font-size: 6.81vw;
+        line-height: 1.15em;
+        margin-top: 10px;
+    }
+}

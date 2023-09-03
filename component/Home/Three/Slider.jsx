@@ -15,6 +15,20 @@ const ProductSlider = () => {
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 1000,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 2, // Number of slides to show at once on medium-sized screens
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1, // Number of slides to show at once on smaller screens
+        },
+      },
+    ],
 
   };
 

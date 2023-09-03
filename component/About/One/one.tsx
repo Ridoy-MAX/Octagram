@@ -28,7 +28,7 @@ const one = () => {
                                         </div>
                                
                                     <div className="col-md-6">
-                                        <img src="about.webp" alt="" />
+                                        <img src="about.webp" alt="" className='w-100' />
                                     </div>
 
                                  
