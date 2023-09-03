@@ -118,7 +118,9 @@ const Navbar = () => {
 
                           <li>
                             <Link href="#" className={styles.buttion_primary_none}>
-                              <p> Service</p>
+                              <p> Service        <i className="fa-solid fa-angle-down ms-1"></i></p>
+
+                       
                             </Link>
 
                             <div className={styles.sub_menu_list}>
@@ -131,8 +133,9 @@ const Navbar = () => {
                                       <div className="col">
                                         <div className="row">
                                           <div className="col-md-4">
-                                          <Link href="/cyber" className={styles.service_link}>
-                                              <div className={styles.one}>
+                                          <Link href="/cyber" >
+                                            <div className="row">
+                                            <div className={styles.one}>
                                                 <div className={styles.img}>
                                                   <img src="three.svg" alt="" />
                                                 </div>
@@ -141,6 +144,8 @@ const Navbar = () => {
                                                   <p>Our team can secure your IT infrastructure with professional testing and assessments.</p>
                                                 </div>
                                               </div>
+                                            </div>
+                                           
 
                                             </Link>
                                           </div>

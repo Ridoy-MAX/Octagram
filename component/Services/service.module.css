@@ -134,3 +134,87 @@
 .services_two .asset .card img{
   padding-top: 40px;
 }
+
+@media screen and (max-width: 575px) {
+    .service_bg{
+        position: absolute;
+        top: 0;
+        z-index: -9;
+        width: 100%;
+    }
+    
+.services .hrading{
+    padding-bottom: 30px;
+}
+.services {
+    padding-top: 30px;
+
+}
+.services .hrading h1{
+    background: linear-gradient(90deg,#102b51,#f9bf01);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+    font-weight: 700;
+    font-family: var(--family1);
+    font-size: 9.81vw;
+    line-height: 1.15em;
+
+}
+.services .hrading p{
+    font-family: var(--family1);
+    font-size: 6.67vw;
+    font-weight: 400;
+    margin-top: 10px;
+    padding-right: 15px;
+}
+.services_one{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: rgb(255, 255, 255);
+}
+.services_one .heading_two h2{
+    font-family: var(--family1);
+    font-size: 6.67vw;
+    font-weight: 400;
+ 
+}
+.services_one .heading_two p{
+    font-family: var(--family1);
+    font-size: 14px;
+    font-weight: 400;
+    padding-top: 30px;
+    padding-right: 15px;
+ 
+}
+.services_two h2{
+    font-weight: 400;
+    font-family: var(--family1);
+    color: white;
+    display: block;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: .224em;
+    text-transform: uppercase;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.services_two h3{
+    font-size: 4vw;
+    font-family: var(--family1);
+    font-weight: 400;
+    color: white;
+}
+.services_two .card{
+    background-color: white;
+    border-radius: 20px;
+    padding: 20px;
+    margin-top: 30px;
+}
+.services_two .asset .card h1{
+    font-family: var(--family1);
+    font-size: 4.67vw;
+    line-height: 1em;
+    font-weight: 400;
+}
+}

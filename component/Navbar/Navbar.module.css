@@ -74,7 +74,9 @@ variable css start
 
 
 
-
+.buttion_primary_none{
+  display: flex !important;
+}
 
 
 
@@ -280,6 +282,81 @@ z-index: 999999999999999;
   display: none;
 }
 @media screen and (max-width: 768px) {
+  .header .nav .menu .nav_item ul li a {
+    text-decoration: none;
+    font-family: var(--family1);
+    color: #3b3b3b;
+    font-size: 30px;
+    padding-right: 0px !important;
+   font-weight: 600;
+    position: relative;
+    letter-spacing: 0.1em !important;
+    margin-right: 0px;
+  
+  
+    position: relative;
+  }
+  .header .nav .menu .nav_item ul li .sub_menu_list a{
+    height: 60px !important;
+    margin-right: 0px !important;
+  }
+  .header .nav .menu .nav_item ul li .sub_menu_list a::before{
+    position: absolute;
+    top: 33px;
+    content: '';
+    width: 0%!important;
+    height: 4px !important;
+    background-color: var(--brand_color);
+  }
+  .header .nav .menu .nav_item ul li .sub_menu_list .one {
+    display: flex;
+    margin-top: 10px;
+    height: 60px;
+  }
+  .header .nav .menu .nav_item ul li .sub_menu_list{
+    position: absolute;
+    top: 318px;
+    left: 0;
+    width: 100%;
+  
+    background-color: var(--brand_color)!important;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.089);
+    backdrop-filter: blur(10px);
+  z-index: 999999999999999;
+    opacity: 0;
+    visibility:hidden;
+  }
+  .header .nav .menu .nav_item ul li .sub_menu_list h6{
+    font-size: 4vw;
+    font-family: var(--family1);
+    font-weight: 400;
+    color: black;
+    padding-top: 10px;
+    padding-bottom: 0px;
+    display: none;
+  }
+  .header .nav .menu .nav_item ul li .sub_menu_list h4{
+    margin-top: 20px;
+    font-size: 15px;
+  }
+  .header .nav .menu .nav_item ul li .sub_menu_list .one .img{
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    box-shadow: 5px 4px 21px rgba(0,0,0,.07), -6px -6px 9px -1px #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 8px;
+  }
+  .header .nav .menu .nav_item ul li .sub_menu_list p{
+    font-family: var(--family1);
+    color: #555;
+    font-size: 12px;
+    padding-right: 0px;
+    letter-spacing: 0;
+    display: none;
+  }
   .header .nav {
     width: 100%;
     z-index: 9999999999999999999999999999999999999999;
