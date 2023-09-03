@@ -38,8 +38,8 @@ const Navbar = () => {
   }, [darkMode]);
 
 
-  function handleMenuToggle(event: MouseEvent<HTMLElement, MouseEvent>): void {
-    throw new Error("Function not implemented.");
+  function handleMenuToggle(event: React.MouseEvent<HTMLElement, MouseEvent>): void {
+    setMenuOpen(!menuOpen);
   }
 
   return (
