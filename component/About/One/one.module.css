@@ -34,6 +34,13 @@
 }
 
 @media screen and (max-width: 575px) {
+    .About_section_one .Heading_one img{
+        margin-top: 80px;
+        margin-bottom: 80px;
+        position: absolute;
+        top: 0;
+        z-index: -9;
+    }
     .About_section_one .Heading_one h1{
         background: linear-gradient(90deg,#102b51,#f9bf01);
         -webkit-background-clip: text;
@@ -60,6 +67,7 @@
     font-size: 13px;
     color: #000000;
     padding-right: 2px;
+    padding-bottom: 30px;
 }
 
 }

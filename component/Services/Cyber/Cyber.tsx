@@ -18,7 +18,7 @@ const Cyber = () => {
                                 <p>A Better Way to Pentest</p>
                             </div>
 
-                     
+
 
                         </div>
                     </div>
@@ -29,7 +29,7 @@ const Cyber = () => {
                     <div className="row">
                         <div className="col-md-1"></div>
                         <div className="col-md-10">
-                          
+
 
                             <div className={Style.heading_two}>
                                 <h2>Scale Your Pentesting Program Today</h2>
@@ -99,53 +99,129 @@ const Cyber = () => {
                                 <h3>for Specific Assets</h3>
                                 <div className="row">
                                     <div className="col-md-4">
-                                        <div className={Style.card}>
-                                            <h1>Web application testing</h1>
-
-                                            <img src="flip.svg" alt="" />
-
+                                        <div className={Style.flip_container}>
+                                            <div className={Style.flipper}>
+                                                <div className={Style.front}>
+                                                    <span className={Style.name}>Web application testing</span>
+                                                    <div className={Style.img}>
+                                                        <img src="flip.svg" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div className={Style.back}>
+                                              
+                                                    <p>Mozilla Web Developer, MooTools & jQuery Consultant, MooTools Core Developer, Javascript Fanatic, CSS Tinkerer, PHP Hacker, and web lover.</p>
+                                                    <div className={Style.img}>
+                                                        <img src="flip.svg" alt="" />
+                                                    </div>
+                                                  
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                     <div className="col-md-4">
-                                        <div className={Style.card}>
-                                            <h1>Web application testing</h1>
-
-                                            <img src="flip.svg" alt="" />
-
+                                        <div className={Style.flip_container}>
+                                            <div className={Style.flipper}>
+                                                <div className={Style.front}>
+                                                    <span className={Style.name}>Web application testing</span>
+                                                    <div className={Style.img}>
+                                                        <img src="flip.svg" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div className={Style.back}>
+                                              
+                                                    <p>Mozilla Web Developer, MooTools & jQuery Consultant, MooTools Core Developer, Javascript Fanatic, CSS Tinkerer, PHP Hacker, and web lover.</p>
+                                                    <div className={Style.img}>
+                                                        <img src="flip.svg" alt="" />
+                                                    </div>
+                                                  
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                     <div className="col-md-4">
-                                        <div className={Style.card}>
-                                            <h1>Web application testing</h1>
-
-                                            <img src="flip.svg" alt="" />
-
+                                        <div className={Style.flip_container}>
+                                            <div className={Style.flipper}>
+                                                <div className={Style.front}>
+                                                    <span className={Style.name}>Web application testing</span>
+                                                    <div className={Style.img}>
+                                                        <img src="flip.svg" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div className={Style.back}>
+                                              
+                                                    <p>Mozilla Web Developer, MooTools & jQuery Consultant, MooTools Core Developer, Javascript Fanatic, CSS Tinkerer, PHP Hacker, and web lover.</p>
+                                                    <div className={Style.img}>
+                                                        <img src="flip.svg" alt="" />
+                                                    </div>
+                                                  
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                     <div className="col-md-4">
-                                        <div className={Style.card}>
-                                            <h1>Web application testing</h1>
-
-                                            <img src="flip.svg" alt="" />
-
+                                        <div className={Style.flip_container}>
+                                            <div className={Style.flipper}>
+                                                <div className={Style.front}>
+                                                    <span className={Style.name}>Web application testing</span>
+                                                    <div className={Style.img}>
+                                                        <img src="flip.svg" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div className={Style.back}>
+                                              
+                                                    <p>Mozilla Web Developer, MooTools & jQuery Consultant, MooTools Core Developer, Javascript Fanatic, CSS Tinkerer, PHP Hacker, and web lover.</p>
+                                                    <div className={Style.img}>
+                                                        <img src="flip.svg" alt="" />
+                                                    </div>
+                                                  
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                     <div className="col-md-4">
-                                        <div className={Style.card}>
-                                            <h1>Web application testing</h1>
-
-                                            <img src="flip.svg" alt="" />
-
+                                        <div className={Style.flip_container}>
+                                            <div className={Style.flipper}>
+                                                <div className={Style.front}>
+                                                    <span className={Style.name}>Web application testing</span>
+                                                    <div className={Style.img}>
+                                                        <img src="flip.svg" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div className={Style.back}>
+                                              
+                                                    <p>Mozilla Web Developer, MooTools & jQuery Consultant, MooTools Core Developer, Javascript Fanatic, CSS Tinkerer, PHP Hacker, and web lover.</p>
+                                                    <div className={Style.img}>
+                                                        <img src="flip.svg" alt="" />
+                                                    </div>
+                                                  
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                     <div className="col-md-4">
-                                        <div className={Style.card}>
-                                            <h1>Web application testing</h1>
-
-                                            <img src="flip.svg" alt="" />
-
+                                        <div className={Style.flip_container}>
+                                            <div className={Style.flipper}>
+                                                <div className={Style.front}>
+                                                    <span className={Style.name}>Web application testing</span>
+                                                    <div className={Style.img}>
+                                                        <img src="flip.svg" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div className={Style.back}>
+                                              
+                                                    <p>Mozilla Web Developer, MooTools & jQuery Consultant, MooTools Core Developer, Javascript Fanatic, CSS Tinkerer, PHP Hacker, and web lover.</p>
+                                                    <div className={Style.img}>
+                                                        <img src="flip.svg" alt="" />
+                                                    </div>
+                                                  
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
+
+
+
+
 
                                 </div>
                             </div>
@@ -155,7 +231,7 @@ const Cyber = () => {
 
             </div>
 
-
+          
             <Footer />
         </div>
     )

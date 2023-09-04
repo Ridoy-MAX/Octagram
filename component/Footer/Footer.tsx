@@ -19,14 +19,14 @@ const Footer = () => {
                                         src={logo1}
                                         alt="Picture of the author"
                                         width={60}
-                                        className=''
+                                        className={Style.one}
 
                                     />
                                     <Image
                                         src={logo}
                                         alt="Picture of the author"
                                         width={150}
-                                        className='mt-3 ms-2'
+                                        className='mt-3 ms-2 '
 
                                     />
 

@@ -200,8 +200,29 @@
 
 
 @media screen and (max-width: 575px) {
+    .footer_body .content .one .link a {
+        display: flex;
+        text-decoration: none;
+        color: white;
+        font-family: var(--family1);
+        padding-top: 5px;
+        font-size: 12px;
+    }
+    .footer .footer_head {
+        padding-top: 10px;
+        padding-bottom: 0px;
+    }
+    .footer_logo  img{
+        width: 85px;
+        height: 15px;
+        margin-top: 8px !important;
+    }
+    .footer_logo  .one{
+       width: 30px !important;
+       height: 30px !important;
+    }
     .footer_logo {
-        margin-bottom: 20px;
+        margin-bottom: 0px;
     }
 
     .footer_body .home_line_five {
@@ -217,6 +238,8 @@
         display: flex;
         justify-content: center;
         width: 100%;
+        margin-bottom: 10px;
+    margin-top: 10px;
     }
 
     .footer .footer_contact {

@@ -61,18 +61,20 @@ body {
     padding-top: 20px !important;
   
   }
-  .red-slider .slick-list .slick-active .Home_item__csXbs {
-    position: relative;
-    /* right: 25px; */
-    transition: 0.4s;
-    width: 100% !important;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    /* width: 300px !important; */
-    /* backdrop-filter: blur(20px) !important; */
-    background-color: #ffffff !important;
-  }
   
+.red-slider .slick-list .slick-slide {
+  display: flex;
+  justify-content: center;
+  /* width: 100% !important; */
+  /* backdrop-filter: blur(20px) !important; */
+
+}
+  .red-slider .slick-list .slick-active .Home_item__csXbs {
+ 
+  }
+  .red-slider .slick-list .slick-active .Home_item__csXbs {
+   width: 100% !important;
+  }
 .red-slider .slick-list .slick-active .Home_item__csXbs::after {
   position: absolute;
   top: 0;

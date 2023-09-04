@@ -16,7 +16,7 @@ const Slider_red = () => {
         slidesToShow: 1,
         // centerMode: true,
         slidesToScroll: 1,
-        autoplay: true,
+        // autoplay: true,
         autoplaySpeed: 2000,
         responsive: [
           {
@@ -29,7 +29,7 @@ const Slider_red = () => {
             breakpoint: 768,
             settings: {
               vertical: false, 
-              centerMode: false,
+              // centerMode: true,
               slidesToShow: 1, // screens
             },
           },

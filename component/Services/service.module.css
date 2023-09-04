@@ -136,6 +136,25 @@
 }
 
 @media screen and (max-width: 575px) {
+    .services_two .card p{
+        margin-top: 10px;
+        font-size: 13px;
+        color: #555;
+        font-family: var(--family1);
+        padding-bottom: 0px;
+    }
+    .services_two .card .one .text h4{
+       font-size: 17px;
+        margin-bottom: 0.5rem;
+        font-weight: 500;
+        line-height: 1.2;
+        font-family: var(--family1);
+        margin-left: 0px;
+    }
+    .services_two .card .one .img img{
+        width: 70px;
+      
+     }
     .service_bg{
         position: absolute;
         top: 0;
@@ -218,3 +237,132 @@
     font-weight: 400;
 }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.flip_container {
+margin-top: 20px;
+margin-bottom: 20px;
+  }
+  
+  .flip_container:hover .flipper{
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+  }
+  
+  .flip_container,
+  .front,
+  .back {
+    width: 100%;
+    height: 227px;
+
+  }
+
+  .flip_container  .front .img{
+    margin-top: 60px;
+  }
+  .flip_container  .front{
+    background-color: #f8f8f8;
+    border-radius: 20px;
+    padding: 40px;
+  }
+  .flip_container  .back{
+    /* background-color: var(--brand_color); */
+    background-color: #00304a00;
+    border-radius: 20px;
+    padding: 40px;
+    backdrop-filter: blur(10px);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+
+  .flip_container  .front .name{
+    font-family: var(--family1);
+    font-size: 25px;
+    line-height: 1em;
+    font-weight: 400;
+
+  }
+  .flipper {
+    -webkit-transition: 0.6s;
+    -webkit-transform-style: preserve-3d;
+  
+    -moz-transition: 0.6s;
+    -moz-transform-style: preserve-3d;
+  
+    -o-transition: 0.6s;
+    -o-transform-style: preserve-3d;
+  
+    transition: 0.6s;
+    transform-style: preserve-3d;
+  
+    position: relative;
+  }
+  
+  .front,
+  .back {
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden;
+  
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  
+  .front {
+  
+    z-index: 2;
+  }
+  
+  .back {
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+  
+    background: #f8f8f8;
+  }
+  
+  .front .name {
+   
+
+  }
+  
+
+  
+  .back_title {
+    font-weight: bold;
+    color: #00304a;
+    position: absolute;
+    top: 180px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    text-shadow: 0.1em 0.1em 0.05em #acd7e5;
+    font-family: Courier;
+    font-size: 2em;
+  }
+  
+  .back p {
+  font-family: var(--family1);
+  color: #555;
+  font-weight: 500;
+  font-size: 16px;
+  }
+  

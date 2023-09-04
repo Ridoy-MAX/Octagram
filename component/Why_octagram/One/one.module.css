@@ -94,6 +94,44 @@ margin-top: 20px;
 
 
 @media screen and (max-width: 575px) {
+    .why_section_one .heading_two .card .one img{
+    width: 80px;
+    }
+    .why_section_one .heading_two .card .two .button{
+        width: 150px;
+        padding: 8px 10px;
+        height: 50px;
+        border-radius: 40px;
+        font-family: var(--family1);
+        font-weight: 600;
+        font-size: 12px;
+        letter-spacing: 0.3em !important;
+        background-color: var(--brand_color);
+    text-decoration: none;
+    color: white;
+    margin-top: 20px;
+    }
+    
+    .why_section_one .heading_two .card .two p{
+        font-weight: 400;
+        font-size: 13px;
+        font-family: var(--family1);
+        color: #555;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    .why_section_one .heading_one h1{
+        font-weight: 700;
+        font-size: 15.81vw;
+        font-family: var(--family1);
+        color: white;
+    }
+    .why_section_one .heading_one h2{
+        font-weight: 600;
+        font-size: 3vw;
+        font-family: var(--family1);
+        color: white;
+    }
     .why_section_one{
         padding-top: 10px;
         padding-bottom: 10px;
@@ -140,8 +178,8 @@ margin-top: 20px;
         font-size: 5.67vw;
         color: #000;
         font-family: var(--family1);
-        padding-right: 50px;
-        margin-left: 30px;
+        padding-right: 10px;
+        margin-left: 10px;
     
     }
     .why_section_two .heading_one .card{
